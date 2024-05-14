@@ -33,12 +33,12 @@
         font-display: swap;
     }
 
-    
+
     body {
         @apply font-Dana;
         background-image: url("assets/images/header.jpg");
         background-repeat: no-repeat;
-        background-size:cover;
+        background-size: cover;
     }
 
 

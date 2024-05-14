@@ -1,113 +1,128 @@
+<!-- <!doctype html>
 <html lang="en">
 
 <head>
-  <title>Title of the document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
 </head>
 
-<body class="font-Dana bg-gray-100 dark:bg-zinc-800">
-  <!-- all app icon  -->
-  <svg class="hidden">
-    <symbol id="shopping-bag" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-      stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round"
-        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-    </symbol>
+<body class="font-Dana bg-gray-100 dark:bg-zinc-800"> -->
+<!-- all app icon  -->
+<svg class="hidden">
+  <symbol id="shopping-bag" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+    stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round"
+      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+  </symbol>
 
-    <symbol id="moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-      stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round"
-        d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
-    </symbol>
+  <symbol id="moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
+    stroke="currentColor">
+    <path strokeLinecap="round" strokeLinejoin="round"
+      d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+  </symbol>
 
-    <symbol id="sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-      stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round"
-        d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
-    </symbol>
+  <symbol id="sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+    stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round"
+      d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+  </symbol>
 
-    <symbol id="arrow-left-on-rectangle" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round"
-        d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
-    </symbol>
-  </svg>
+  <symbol id="arrow-left-on-rectangle" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round"
+      d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15M12 9l-3 3m0 0 3 3m-3-3h12.75" />
+  </symbol>
+</svg>
 
-  <header
-    class="fixed top-9 right-0 left-0 flex items-center	w-[90%] h-24  py-5 mx-auto bg-black/50 rounded-3xl px-10  backdrop-blur-[6px]">
-    <div class="flex  items-center justify-between w-full">
+<header
+  class="fixed top-9 right-0 left-0 flex items-center	w-[90%] h-24  py-5 mx-auto bg-black/50 rounded-3xl px-10  backdrop-blur-[6px]">
+  <div class="flex  items-center justify-between w-full">
 
-      <nav class="flex items-center gap-x-9">
-        <!-- logo -->
-        <div>
-          <img src="favicon.ico" alt="shose">
-        </div>
-        <!-- menu -->
-        <ul class="flex text-xl gap-x-9 h-full text-gray-300 tracking-tightest child:leading-[56px]">
-          <li class="font-DanaMedium text-orange-200">
-            <a href="#">صفحه اصلی </a>
-          </li>
-          <li class="relative group">
-            <a href="#" class="group-hover:text-orange-300"> فروشگاه </a>
-            <!-- submenu -->
-            <div
-              class="absolute top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible w-52 p-6 space-y-4 text-zinc-700 dark:text-white 
+    <nav class="flex items-center gap-x-9">
+      <!-- logo -->
+      <div>
+        <img src="favicon.ico" alt="shose">
+      </div>
+      <!-- menu -->
+      <ul class="flex text-xl gap-x-9 h-full text-gray-300 tracking-tightest child:leading-[56px]">
+        <li class="font-DanaMedium text-orange-200">
+          <a href="#">صفحه اصلی </a>
+        </li>
+        <li class="relative group">
+          <a href="#" class="group-hover:text-orange-300 "> فروشگاه </a>
+          <!-- submenu -->
+          <div
+            class="absolute left-0 top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible w-52 p-6 space-y-4 text-zinc-700 dark:text-white 
               bg-white dark:bg-zinc-700 text-base rounded-2xl shadow-normal border-t-[3px]
-               border-t-orange-300 transition-all child:inline-block  tracking-normal  child-transition-colors child-hover:text-orange-300 ">
+               border-t-orange-300 transition-all child:block  tracking-normal  child-transition-colors child-hover:text-orange-300 ">
 
-              <a href="#"> نایکی </a>
-              <a href="#"> آدیداس </a>
-              <a href="#">نیو بالانس </a>
-              <a href="#">امیری</a>
-              <a href="#">آل استار</a>
+            <a href="#"> نایکی </a>
+            <a href="#"> آدیداس </a>
+            <a href="#">نیو بالانس </a>
+            <a href="#">امیری</a>
+            <a href="#">آل استار</a>
 
-            </div>
-          </li>
-          <li>
-            <a href="#">دیکشنری</a>
-          </li>
-          <li>
-            <a href="#"> بلاگ </a>
-          </li>
-          <li>
-            <a href="#"> درباره ما </a>
-          </li>
-          <li>
-            <a href="#"> تماس با ما </a>
-          </li>
+          </div>
+        </li>
+        <li>
+          <a href="#">دیکشنری</a>
+        </li>
+        <li>
+          <a href="#"> بلاگ </a>
+        </li>
+        <li>
+          <a href="#"> درباره ما </a>
+        </li>
+        <li>
+          <a href="#"> تماس با ما </a>
+        </li>
 
-        </ul>
-      </nav>
-      <div class="flex text-orange-200 items-center text-xl gap-x-10">
-        <!-- cart icon and switch btn -->
-        <div class="flex gap-x-5">
+      </ul>
+    </nav>
+    <div class="flex text-orange-200 items-center text-xl gap-x-10">
+      <!-- cart icon and switch btn -->
+      <div class="flex items-center gap-x-5">
 
-          <div>
+        <div class="relative group">
+
+          <div class="py-3  cursor-pointer">
             <svg class="w-8 h-8 ">
               <use xlink:href="#shopping-bag"></use>
             </svg>
           </div>
 
-          <div>
-            <svg class="w-8 h-8">
-              <use href="#moon"></use>
-            </svg>
-          </div>
+          <div
+            class="absolute top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible w-52 p-5 space-y-4 text-zinc-700 dark:text-white 
+        bg-white dark:bg-zinc-700 text-base rounded-2xl shadow-normal border-t-[3px] w-[400px]
+         border-t-orange-300 transition-all child:block  tracking-normal  child-transition-colors child-hover:text-orange-300 ">
 
+          </div>
         </div>
 
-        <span class="w-px h-14 bg-white/20 "></span>
-        <!-- login link -->
-        <a href="#" class="flex items-center gap-x-2.5 tracking-tightest">
-          <svg class="w-8 h-8 rotate-180">
-            <use href="#arrow-left-on-rectangle"></use>
+
+
+        <div class="cursor-pointer" (click)="darkModeClick()">
+          <svg class="block dark:hidden w-8 h-8">
+            <use href="#moon"></use>
           </svg>
-          ورود | ثبت نام
-        </a>
+
+          <svg class="hidden  dark:block w-8 h-8">
+            <use href="#sun"></use>
+          </svg>
+        </div>
+
       </div>
 
+      <span class="w-px h-14 bg-white/20 "></span>
+      <!-- login link -->
+      <a href="#" class="flex items-center gap-x-2.5 tracking-tightest">
+        <svg class="w-8 h-8 rotate-180">
+          <use href="#arrow-left-on-rectangle"></use>
+        </svg>
+        ورود | ثبت نام
+      </a>
     </div>
-  </header>
 
-
-</body>
-
-</html>
+  </div>
+</header>

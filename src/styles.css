@@ -23,7 +23,7 @@
 
     @font-face {
         font-family: "MorabbaLight";
-        src: local("Dana"), url("assets/fonts/Morabba/woff2/Morabba-Light.woff2") format("woff2");
+        src: local("Morabba Light"), url("assets/fonts/Morabba/woff2/Morabba-Light.woff2") format("woff2");
         font-display: swap;
     }
 
@@ -33,15 +33,21 @@
         font-display: swap;
     }
 
+    @font-face {
+        font-family: "MorabbaBold";
+        src: local("Morabba Bold"), url("assets/fonts/Morabba/woff2/Morabba-Bold.woff2") format("woff2");
+        font-display: swap;
+    }
+
 
     body {
 
         @apply font-Dana;
 
-
+/* 
         background-image: url("assets/images/header.jpg");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover; */
     }
 
 

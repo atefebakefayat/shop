@@ -25,7 +25,8 @@ module.exports = {
         "Dana": "Dana",
         "DanaMedium": "DanaMedium",
         "DanaDemiBold": "DanaDemiBold",
-        "MorabbaLight ": "MorabbaLight",
+        "MorabbaBold": "MorabbaBold",
+        "MorabbaLight": "MorabbaLight",
         "MorabbaMedium": "MorabbaMedium",
       },
       letterSpacing: {
@@ -33,9 +34,26 @@ module.exports = {
       },
       spacing: {
         "30": "7.5rem"
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+          lg: "0.625rem",
+        }
+      },
+      backgroundImage: {
+        "home-desktop": "url(assets/images/header.jpg)",
       }
-
     },
+    
+    screens: {
+      'xs': '480px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+    }
   },
   plugins: [
     function ({ addVariant }) {

@@ -29,19 +29,26 @@
     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
   </symbol>
 
+  <symbol id="bars-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+    stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+  </symbol>
+
+
+
 </svg>
 
 <header
-  class="fixed top-9 right-0 left-0 flex items-center	w-[90%] h-24  py-5 mx-auto bg-black/50 rounded-3xl px-10  backdrop-blur-[6px]">
+  class="fixed top-9 right-0 left-0 md:flex hidden items-center w-[98%] lg:w-[90%] h-24  py-5 mx-auto bg-black/50 rounded-3xl px-5 lg:px-10  backdrop-blur-[6px]">
   <div class="flex  items-center justify-between w-full">
 
-    <nav class="flex items-center gap-x-9">
+    <nav class="flex items-center gap-x-6 lg:gap-x-9 h-14">
       <!-- logo -->
-      <div>
+      <div class="shrink-0">
         <img src="favicon.ico" alt="shose">
       </div>
       <!-- menu -->
-      <ul class="flex text-xl gap-x-9 h-full text-gray-300 tracking-tightest child:leading-[56px]">
+      <ul class="flex gap-x-5 lg:gap-x-9 text-xl gap-x-9 h-full text-gray-300 tracking-tightest child:leading-[56px]">
         <li class="font-DanaMedium text-orange-300">
           <a href="#">صفحه اصلی </a>
         </li>
@@ -76,9 +83,9 @@
 
       </ul>
     </nav>
-    <div class="flex text-orange-200 items-center text-xl gap-x-10">
+    <div class="flex gap-x-4 text-orange-200 items-center text-xl xl:gap-x-10 lg:gap-x-5">
       <!-- cart icon and switch btn -->
-      <div class="flex items-center gap-x-5">
+      <div class="flex items-center gap-x-4  lg:gap-x-5">
 
         <div class="relative group">
 
@@ -172,9 +179,52 @@
         <svg class="w-8 h-8 rotate-180">
           <use href="#arrow-left-on-rectangle"></use>
         </svg>
-        ورود | ثبت نام
+        <span class="hidden xl:inline-block"> ورود | ثبت نام</span>
       </a>
     </div>
 
   </div>
+
+
 </header>
+
+
+<div class="flex md:hidden items-center justify-between h-16 bg-white dark:bg-zinc-700 px-4">
+
+<div>
+  <svg  class="w-6 h-6">
+    <use href="bars-3"></use>
+  </svg>
+</div>
+
+
+<div>
+  <svg  class="w-6 h-6">
+    <use href="shopping-bag"></use>
+  </svg>
+</div>
+
+
+</div>
+
+
+<main>
+  <section class="home h-[900px] md:bg-home-desktop bg-no-repeat bg-cover bg-[center_top]">
+    <div class="container h-full md:min-h-screen flex justify-end items-center">
+      <div class="text-white ">
+        <h2 class="font-MorabbaBold text-2xl md:text-6xl mb-0.5 md:mb-2">مرجع کامل کفش کانورس</h2>
+        <span class="font-MorabbaLight text-xl md:text-4xl">تضمین اصالت تمامی کالاها</span>
+        <span class="block w-[100px] h-px md:h-0.5 bg-gray-300 my-3 md:my-8"></span>
+        <p class="max-w-[201] md:max-w-[460px] md:text-2xl text-xs">به شما اطمینان می دهیم با قیمتی مناسب، محصولی اصل و
+          با کیفیت از
+          برند کانورس و
+          جردن را در
+          اختیار شما قرار
+          دهیم </p>
+      </div>
+
+
+
+    </div>
+  </section>
+</main>

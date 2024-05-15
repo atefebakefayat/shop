@@ -23,16 +23,16 @@ module.exports = {
       },
       fontFamily: {
         "Dana": "Dana",
-        "DanaMedium": "Dana Medium",
-        "DanaDemiBold": "Dana DemiBold",
-        "MorabbaLight ": "Morabba Light",
-        "MorabbaMedium": "Morabba Medium",
+        "DanaMedium": "DanaMedium",
+        "DanaDemiBold": "DanaDemiBold",
+        "MorabbaLight ": "MorabbaLight",
+        "MorabbaMedium": "MorabbaMedium",
       },
       letterSpacing: {
         "tightest": "-0.065em"
       },
-      spacing:{
-        "30":"7.5rem"
+      spacing: {
+        "30": "7.5rem"
       }
 
     },

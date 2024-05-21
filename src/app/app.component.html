@@ -34,12 +34,46 @@
     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
   </symbol>
 
+  <symbol id="close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+    stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+  </symbol>
+
+  <symbol id="home" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+    stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round"
+      d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+  </symbol>
+
+  <symbol id="chat" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+    stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round"
+      d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+  </symbol>
+
+  <symbol id="bag" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+    stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round"
+      d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+  </symbol>
+
+  <symbol id="phone" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+    stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round"
+      d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+  </symbol>
+
+  <symbol id="chevron-down" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+    stroke="currentColor" class="w-6 h-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+  </symbol>
+
 
 
 </svg>
 
 <header
-  class="fixed top-9 right-0 left-0 md:flex hidden items-center w-[98%] lg:w-[90%] h-24  py-5 mx-auto bg-black/50 rounded-3xl px-5 lg:px-10  backdrop-blur-[6px]">
+  class="fixed top-9 right-0 left-0 hidden md:flex  items-center w-[98%] lg:w-[90%] h-24  py-5 mx-auto bg-black/50 rounded-3xl px-5 lg:px-10  backdrop-blur-[6px]">
   <div class="flex  items-center justify-between w-full">
 
     <nav class="flex items-center gap-x-6 lg:gap-x-9 h-14">
@@ -191,25 +225,149 @@
 
 <div class="flex md:hidden items-center justify-between h-16 bg-white dark:bg-zinc-700 px-4">
 
-<div>
-  <svg  class="w-6 h-6">
-    <use href="bars-3"></use>
-  </svg>
-</div>
+  <!-- nav icon -->
+  <div>
+    <svg class="w-6 h-6 text-Zinc-700 dark:text-white">
+      <use href="#bars-3"></use>
+    </svg>
+  </div>
+
+  <!-- nav -->
+  <div class="fixed top-0 bottom-0 right-0 w-64 min-h-screen  bg-white dark:bg-zinc-700  z-20 pt-3 px-4">
+
+    <!-- nav header -->
+    <div class="flex items-center mb-6 justify-between pb-5 border-b border-b-gray-100 dark:border-b-white/10">
+
+      <div class="flex items-center gap-x-5">
+
+        <img src="favicon.ico" class="w-[41px] h-10" alt="product">
+
+        <img src="assets/images/logoShoes.svg" class="w-[100px] h-20" alt="product">
 
 
-<div>
-  <svg  class="w-6 h-6">
-    <use href="shopping-bag"></use>
-  </svg>
-</div>
+      </div>
 
+      <svg class="w-6 h-6 text-orange-300">
+        <use href="#close"></use>
+      </svg>
+
+    </div>
+
+    <!-- nav menu -->
+    <div>
+
+      <div class="flex items-center bg-orange-200/20 text-orange-300 mb-4 pr-2.5 h-10 rounded-md">
+        <a href="#" Class="flex items-center gap-x-2">
+          <svg class="w-5 h-5">
+            <use href="#home"></use>
+          </svg>
+          صفحه اصلی
+        </a>
+      </div>
+
+      <ul class="child:pr-2.5 space-y-6  text-zinc-600 dark:text-white ">
+
+
+        <li class="flex justify-between items-center mb-4 mt-4">
+          <a href="#" Class="flex items-center gap-x-2">
+            <svg class="w-5 h-5">
+              <use href="#shopping-bag"></use>
+            </svg>
+            فروشگاه
+          </a>
+          <span>
+            <svg class="w-4 h-4">
+              <use href="#chevron-down"></use>
+            </svg>
+          </span>
+
+        </li>
+
+        <li>
+          <a href="#" Class="flex items-center gap-x-2">
+            <svg class="w-5 h-5">
+              <use href="#chat"></use>
+            </svg>
+            دیکشنری
+          </a>
+        </li>
+
+        <li>
+          <a href="#" Class="flex items-center gap-x-2">
+            <svg class="w-5 h-5">
+              <use href="#bag"></use>
+            </svg>
+            درباره ما
+          </a>
+        </li>
+
+        <li>
+          <a href="#" Class="flex items-center gap-x-2">
+            <svg class="w-5 h-5">
+              <use href="#phone"></use>
+            </svg>
+            تماس با ما
+          </a>
+        </li>
+
+
+
+      </ul>
+    </div>
+
+    <!-- nav footer -->
+    <div
+      class="flex flex-col items-start  text-orange-300 space-y-6 pt-8 mt-8 px-2.5  border-t border-t-gray-100 dark:border-t-white/10">
+      <a href="" class="flex items-center gap-x-2">
+        <svg class="w-5 h-5 ">
+          <use href="#arrow-left-on-rectangle"></use>
+        </svg>
+        ورود|ثبت نام
+      </a>
+
+      <span class="flex  items-center gap-x-2">
+
+        <svg class="block w-5 h-5 dark:hidden w-8 h-8">
+          <use href="#moon"></use>
+        </svg>
+
+        <svg class="hidden  w-5 h-5 dark:block w-8 h-8">
+          <use href="#sun"></use>
+        </svg>
+
+        <span class="block  dark:hidden">تم تیره</span>
+        <span class="hidden  dark:block">تم روشن</span>
+
+      </span>
+
+      <a href="" class="flex  items-center gap-x-2">
+        <svg class="w-5 h-5">
+          <use href="#shopping-bag"></use>
+        </svg>
+        سبد خرید
+      </a>
+
+    </div>
+  </div>
+
+
+  <!-- logo type -->
+  <div class="w-[100px] mt-[6px]">
+    <img src="assets/images/logoShose.png" class="w-30 h-30" alt="product">
+  </div>
+
+  <!-- cart icon -->
+  <div>
+    <svg class="w-6 h-6 text-Zinc-700 dark:text-white">
+      <use href="#shopping-bag"></use>
+    </svg>
+  </div>
 
 </div>
 
 
 <main>
-  <section class="home h-[900px] md:bg-home-desktop bg-no-repeat bg-cover bg-[center_top]">
+  <section class="home h-[900px] bg-home-desktop bg-no-repeat bg-cover bg-[center_top]">
     <div class="container h-full md:min-h-screen flex justify-end items-center">
       <div class="text-white ">
         <h2 class="font-MorabbaBold text-2xl md:text-6xl mb-0.5 md:mb-2">مرجع کامل کفش کانورس</h2>
@@ -223,8 +381,9 @@
           دهیم </p>
       </div>
 
-
-
     </div>
   </section>
 </main>
+
+
+<div class="overlay md:hidden fixed inset-0 w-full h-full bg-black/40 z-10"></div>
